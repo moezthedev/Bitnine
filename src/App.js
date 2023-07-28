@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import React, { useState, useEffect } from 'react';
+import Navbar from "./components/navbar"
+import Lorem from "./components/lorem"
+import Header from "./components/header"
+import Subheader from './components/subheader';
+import Keyfeatures from './components/keyfeatures';
+import GoToTopButton from './components/gototop';
+import ImageWithText from './components/imagewithtext';
+import FlipCard from "./components/flippingcard"
+import Footer from "./components/footer"
 function App() {
+  const [scrolling, setScrolling] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      <Navbar scrolling={scrolling} setScrolling={setScrolling} showMenu={showMenu} setShowMenu={setShowMenu}/>
+<Header/>
+<Subheader/>
+<Keyfeatures/>
+<GoToTopButton/>
+<ImageWithText/>
+<FlipCard/>
+<Footer/>
     </div>
   );
 }

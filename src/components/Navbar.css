@@ -1,0 +1,120 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    transition: padding 0.3s;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+  }
+  
+  .scrolling {
+    padding: 10px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 120px; 
+    transition: width 0.3s;
+    padding-left: 20px;
+  }
+  
+  .small-logo {
+    width: 200px; 
+  }
+  .links-container{
+    display: flex;
+    gap:30px;
+    padding-right: 80px;
+    list-style-type: none;
+    color: black;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+    font-weight: 400;
+    transition: color 0.5s;
+  }
+  a:hover{
+    color:orange;
+  }
+.hamburger-icon{
+    display: none;
+}
+
+
+.tryfree-btn{
+    background-color:#022EA9;
+    padding: 4px;
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+width: 80px;
+  }
+  .nav-menu-container{
+    display: none;
+    
+  }
+ 
+  @media only screen and (max-width: 845px) {
+    .nav-menu-container{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #fff;
+        align-items: start;
+        gap:5px;
+        width: 100%;
+        margin-top: 90px;
+        padding-left: 20px;
+    }
+    .nav-menu-container>a{
+        color:#74777F;
+        font-weight: 500;
+        width: 100%;
+        border-bottom: 2px solid hwb(0 93% 7% / 0.577);
+        cursor: pointer;
+    }
+    
+    .nav-menu-container>a:hover{
+color:orange;
+    }
+    .nav-menu-container>button{
+        outline: none;
+    }
+    .logo {
+        width: 120px; 
+        transition: width 0.3s;
+        padding-left: 15px;
+      }
+    .small-logo {
+        width: 150px; 
+      }
+      .links-container{
+        display: none;
+      }
+      .navbar{
+        width: 100vw;
+        overflow-x: hidden;
+    background-color: #fff;
+  
+      }
+      .hamburger-icon{
+        display: block;
+        width: 40px;
+        height: 30px;
+       margin-right: 70px;
+       
+      }
+  }
+ 

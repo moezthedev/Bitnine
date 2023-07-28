@@ -1,0 +1,24 @@
+.keyfeatures-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+padding-left: 20px;
+padding-right: 20px;
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 50px;
+}
+.keyfeatures-container>p{
+color: #666666;
+}
+
+@media only screen and (max-width: 845px) {
+    .features-img-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+   .features-img-container>img{
+    width: 300px;
+   }
+  }

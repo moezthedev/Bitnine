@@ -1,0 +1,79 @@
+/* ImageWithText.css */
+.container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #F3F6FB;
+  }
+  
+  .cardofimg {
+    padding:40px 80px 40px 80px;
+    
+   
+    
+  }
+  
+  .image-container {
+    position: relative;
+   
+  }
+  
+  .image {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#fff;
+    color:black ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    
+
+  }
+  
+  .image-container:hover .text-overlay {
+    opacity: 1;
+    border: 1px solid #2a35b7;
+    border-radius: 12px;
+    animation: fadeIn 1s;
+    color:#787878;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @media only screen and (max-width: 845px) {
+    .container {
+      flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+
+    }
+   .cardofimg{
+    padding-left: 25px;
+    padding-right: 25px;
+   }
+    .text-overlay{
+        font-size: medium;
+    }
+  }
